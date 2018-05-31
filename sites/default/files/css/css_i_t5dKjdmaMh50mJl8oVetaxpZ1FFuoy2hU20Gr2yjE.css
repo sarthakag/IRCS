@@ -1,0 +1,2 @@
+.caption{display:table;}.caption > *{display:block;max-width:100%;}.caption > figcaption{display:table-caption;caption-side:bottom;max-width:none;}.caption > figcaption[contenteditable=true]:empty:before{content:attr(data-placeholder);font-style:italic;}
+p[data-widget="image"].align-center{text-align:center;}div[data-cke-widget-wrapper].align-center > figure[data-widget="image"]{margin-left:auto;margin-right:auto;}
