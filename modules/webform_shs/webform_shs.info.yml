@@ -1,0 +1,14 @@
+name: 'Webform Simple Hierarchical Select'
+type: module
+description: 'Integrates Simple Hierarchical Select module with Webform.'
+dependencies:
+  - webform
+  - shs
+# core: 8.x
+package: Webform
+
+# Information added by Drupal.org packaging script on 2018-05-07
+version: '8.x-1.0-alpha1+2-dev'
+core: '8.x'
+project: 'webform_shs'
+datestamp: 1525719500

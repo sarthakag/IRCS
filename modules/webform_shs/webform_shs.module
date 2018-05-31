@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Webform component which renders a "shs" field.
+ */
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * @param \Drupal\taxonomy\TermInterface $term
+ */
+function webform_shs_taxonomy_term_presave(\Drupal\taxonomy\TermInterface $term) {
+  \Drupal\webform_shs\Element\ShsTermSelect::invalidateOptionsCache($term->bundle());
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_delete().
+ *
+ * @param \Drupal\taxonomy\TermInterface $term
+ */
+function webform_shs_taxonomy_term_delete(\Drupal\taxonomy\TermInterface $term) {
+  \Drupal\webform_shs\Element\ShsTermSelect::invalidateOptionsCache($term->bundle());
+}
